@@ -7,7 +7,7 @@ import java.io.BufferedOutputStream
 import java.net.ServerSocket
 import java.util.concurrent.Executors
 
-class Server(private val port: Int = 9999, private val bicycleJourneySource: BicycleJourneySource) {
+class DataServer(private val port: Int = 9999, private val bicycleJourneySource: BicycleJourneySource) {
     private var serverSocket: ServerSocket? = null
 
     private var count = 0 //Number of threads created
