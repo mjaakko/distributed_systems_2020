@@ -1,10 +1,20 @@
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.4.0'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
 }
 
 group 'xyz.malkki'
 version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'xyz.malkki.distributed_systems_2020.MainKt'
+        )
+    }
+}
+
 
 repositories {
     mavenCentral()
