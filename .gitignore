@@ -163,3 +163,6 @@ gradle-app.setting
 **/build/
 
 # End of https://www.toptal.com/developers/gitignore/api/kotlin,gradle,intellij,java
+
+# Data directory
+/bikedata
